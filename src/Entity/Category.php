@@ -33,6 +33,11 @@ class Category
     {
         $this->products = new ArrayCollection();
     }
+    //  pour gerer l'affichage des catégories par produit dans l'admin
+    public function __toString()
+    {
+        return $this->getName();
+    }
 
     public function getId(): ?int
     {

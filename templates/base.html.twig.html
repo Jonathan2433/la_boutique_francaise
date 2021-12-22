@@ -52,6 +52,8 @@
             <div class="navbar-item-custom">
 
                 {% if app.user %}
+                <a href="{{ path('admin') }}">Administration</a> 
+                
                 <a href="{{ path('account') }}">Mon Compte <small>({{app.user.firstname}})</small></a> | 
                 <a href="{{ path('app_logout') }}">Déconnexion</a>
                 {% else %}
